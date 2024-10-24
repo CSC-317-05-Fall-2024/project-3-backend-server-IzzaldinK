@@ -3,6 +3,7 @@ body{
     background-color: rgb(181, 181, 186);
 }
 .container{
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,6 +11,7 @@ body{
 }
 
 .img-container {
+    /* border: 1px solid green; */
     position: relative;
     display: flex;
     align-items: center;
@@ -30,6 +32,7 @@ body{
 }
 
 nav{
+    /* border: 1px solid red; */
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -46,27 +49,39 @@ nav a {
 
 
 .content-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    min-height: 100vh;
+   /* border: 1px solid red; */
+   display: grid;
+   grid-template-rows: repeat(3, 400px);
+   grid-template-columns: repeat(3, 400px);
+   justify-content: center;
+   align-items: center;
+   margin-top: 20px;
 }
 
-.content-container img{
-    width: 500px;
-    height: 250px;
+
+.content-container img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.content-container p{
+.content-container .restaurant{
+   border: 1px solid black;
+   justify-self: center;
+   align-self: center;
+   border-radius: 10px;
+}
+
+.content-container .restaurant p{
     text-align: center;
-    margin: 0px 200px;
-    margin-top: 30px;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-}
+ }
 
-footer{
+ .content-container .restaurant p span{
+    font-weight: bold;
+ }
+
+ footer{
     background-color: rgb(201, 204, 207);
     height: 30px;
     text-align: right;
@@ -74,3 +89,10 @@ footer{
     padding-right: 5px;
 }
 
+.content-container .restaurant .delete {
+    background-color: none;
+    background: none;
+    cursor: pointer;
+    border: none;
+    color: rgb(156, 52, 52);
+}

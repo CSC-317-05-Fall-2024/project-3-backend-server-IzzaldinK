@@ -45,26 +45,60 @@ nav a {
 }
 
 
-.content-container{
+.content-container {
+
+    display: flex;
+    align-items: center;
+}
+
+form {
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    min-height: 100vh;
+    justify-content: center;
 }
 
-.content-container img{
-    width: 500px;
-    height: 250px;
+.form-input {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
 }
 
-.content-container p{
-    text-align: center;
-    margin: 0px 200px;
-    margin-top: 30px;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
+.form-input label {
+    padding-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
 }
+
+.form-input input {
+    width: 300px;
+    height: 30px;
+}
+
+.form-input button {
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     background-color: rgb(201, 204, 207);
@@ -73,4 +107,3 @@ footer{
     align-content: center;
     padding-right: 5px;
 }
-
